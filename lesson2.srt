@@ -1,0 +1,505 @@
+1
+00:00:00,770 --> 00:00:02,950
+- [Narrator] When we create
+a grid with CSS Grid Layout,
+
+2
+00:00:02,950 --> 00:00:06,420
+we can use a variety of different
+ways to size the tracks.
+
+3
+00:00:07,850 --> 00:00:10,350
+We'll take a look at a
+grid specific sizing method
+
+4
+00:00:10,350 --> 00:00:12,900
+in the next lesson, but first,
+
+5
+00:00:12,900 --> 00:00:13,730
+let's have a better look at
+
+6
+00:00:13,733 --> 00:00:16,033
+how different sizing values and keywords
+
+7
+00:00:16,030 --> 00:00:17,050
+work for grid.
+
+8
+00:00:18,060 --> 00:00:19,930
+I'm continuing to use the files from
+
+9
+00:00:19,930 --> 00:00:23,800
+the last lesson so Basics
+to HTML and Basics .CSS.
+
+10
+00:00:24,950 --> 00:00:26,370
+And in our last lesson,
+
+11
+00:00:26,370 --> 00:00:29,080
+we used pixels to size our tracks.
+
+12
+00:00:31,500 --> 00:00:33,750
+We can however use any valid length unit
+
+13
+00:00:33,750 --> 00:00:36,060
+so that might be viewport units, ems,
+
+14
+00:00:36,060 --> 00:00:37,230
+or any other unit you might want to use,
+
+15
+00:00:37,233 --> 00:00:38,993
+they're all possible.
+
+16
+00:00:40,010 --> 00:00:44,220
+So perhaps we could
+change this first column.
+
+17
+00:00:47,671 --> 00:00:48,501
+To 20vw.
+
+18
+00:00:52,580 --> 00:00:56,000
+And we might want to make this one 12 em.
+
+19
+00:01:00,560 --> 00:01:02,670
+So any of the length units
+that you're familiar with,
+
+20
+00:01:02,670 --> 00:01:04,330
+you can use those.
+
+21
+00:01:05,430 --> 00:01:08,220
+You can also use percentages.
+
+22
+00:01:08,220 --> 00:01:10,420
+When you use a percentage for a track size
+
+23
+00:01:10,420 --> 00:01:11,990
+it will be calculated from the size
+
+24
+00:01:11,990 --> 00:01:13,440
+of the grid container.
+
+25
+00:01:14,520 --> 00:01:17,540
+Therefore a 20% column track
+
+26
+00:01:17,540 --> 00:01:20,210
+is going to be 20% of the width.
+
+27
+00:01:20,210 --> 00:01:23,320
+Percentages are also valid
+for the gap property.
+
+28
+00:01:24,740 --> 00:01:27,170
+You can use auto for your track sizing
+
+29
+00:01:27,170 --> 00:01:29,040
+and that's actually the
+default track sizing
+
+30
+00:01:29,040 --> 00:01:31,780
+if you don't specify a size for track.
+
+31
+00:01:31,780 --> 00:01:33,430
+You can really think of auto as being
+
+32
+00:01:33,430 --> 00:01:36,350
+kind of big enough to fit the content.
+
+33
+00:01:36,350 --> 00:01:38,590
+So when we've got an auto sized track,
+
+34
+00:01:38,590 --> 00:01:40,460
+it will keep expanding to take up
+
+35
+00:01:40,460 --> 00:01:44,120
+as much space for the content to fill in.
+
+36
+00:01:44,120 --> 00:01:47,840
+It's worth noting if
+you use auto for tracks
+
+37
+00:01:47,840 --> 00:01:50,740
+where there is some extras
+or size in that dimension,
+
+38
+00:01:50,740 --> 00:01:53,760
+for example if we make
+a column track auto,
+
+39
+00:01:54,650 --> 00:01:56,380
+you can see that it stretches.
+
+40
+00:01:56,380 --> 00:01:57,750
+It's the only one of these tracks
+
+41
+00:01:57,750 --> 00:01:59,910
+that will actually
+stretch if there's extra
+
+42
+00:01:59,910 --> 00:02:01,270
+space in the grid container,
+
+43
+00:02:01,270 --> 00:02:04,770
+it will stretch out and take it up.
+
+44
+00:02:04,770 --> 00:02:07,680
+The auto keyword is a
+kind of intrinsic sizing
+
+45
+00:02:07,680 --> 00:02:09,810
+and what that means is
+it looks at the content
+
+46
+00:02:09,810 --> 00:02:11,750
+and it decides how big it needs to be
+
+47
+00:02:11,750 --> 00:02:13,840
+based on the content size.
+
+48
+00:02:13,840 --> 00:02:15,450
+And we've also got some newer
+
+49
+00:02:15,450 --> 00:02:18,090
+intrinsic sizing keywords.
+
+50
+00:02:18,090 --> 00:02:19,930
+Now these aren't just for grid,
+
+51
+00:02:19,930 --> 00:02:21,640
+they can be used elsewhere,
+
+52
+00:02:21,640 --> 00:02:23,910
+they can be used for width and things.
+
+53
+00:02:23,910 --> 00:02:26,880
+But they've got the best
+browser support in grid,
+
+54
+00:02:26,880 --> 00:02:29,540
+so they're really nice
+to use for grid layout.
+
+55
+00:02:29,540 --> 00:02:30,750
+Anywhere that grid is support
+
+56
+00:02:30,750 --> 00:02:33,230
+you can also use these keywords.
+
+57
+00:02:33,230 --> 00:02:35,600
+So let's have a quick look at those.
+
+58
+00:02:35,600 --> 00:02:37,820
+Now the first of the keywords
+we're going to look at
+
+59
+00:02:37,820 --> 00:02:39,950
+is called min-content.
+
+60
+00:02:39,950 --> 00:02:44,120
+So if we make all of our
+tracks min-content size,
+
+61
+00:02:45,670 --> 00:02:46,650
+just like this.
+
+62
+00:02:48,640 --> 00:02:51,460
+You can see what happens
+to the display here.
+
+63
+00:02:52,460 --> 00:02:55,370
+They've gone down to the
+smallest they can do.
+
+64
+00:02:55,370 --> 00:02:58,050
+So at track three here, has basically got
+
+65
+00:02:58,050 --> 00:02:59,970
+as small as, I think,
+the word content here
+
+66
+00:02:59,970 --> 00:03:01,390
+is the longest word.
+
+67
+00:03:01,390 --> 00:03:03,630
+And so that's holding the track
+
+68
+00:03:03,630 --> 00:03:04,720
+as big as it needs to be.
+
+69
+00:03:04,720 --> 00:03:08,450
+So that's kind of the
+min-content size of our tracks.
+
+70
+00:03:09,670 --> 00:03:11,100
+We have another keyword which is
+
+71
+00:03:11,100 --> 00:03:13,950
+sort of the reverse of
+this, that's max-content.
+
+72
+00:03:13,950 --> 00:03:18,500
+So if we set our three tracks
+to be max-content size,
+
+73
+00:03:20,870 --> 00:03:23,490
+now you can see that the
+tracks have got as big
+
+74
+00:03:23,490 --> 00:03:24,450
+as they can be.
+
+75
+00:03:24,450 --> 00:03:27,010
+So what's happened here
+is the string inside
+
+76
+00:03:27,010 --> 00:03:29,460
+track three has unraveled and it's
+
+77
+00:03:29,460 --> 00:03:31,120
+getting as long as it needs to be,
+
+78
+00:03:31,120 --> 00:03:32,940
+and then that's how
+big that track becomes.
+
+79
+00:03:32,940 --> 00:03:35,070
+Now, this would cause overflows
+
+80
+00:03:35,070 --> 00:03:36,840
+if the grid container was smaller,
+
+81
+00:03:36,840 --> 00:03:38,530
+if you had a lot of text in there,
+
+82
+00:03:38,530 --> 00:03:41,020
+this could cause a scroll bar to poke out
+
+83
+00:03:41,020 --> 00:03:42,310
+of the side of the grid.
+
+84
+00:03:42,310 --> 00:03:44,430
+That's the max-content size.
+
+85
+00:03:45,510 --> 00:03:48,880
+And we have a third, which
+is called fit-content.
+
+86
+00:03:48,880 --> 00:03:51,350
+And you pass a value into fit-content,
+
+87
+00:03:51,350 --> 00:03:52,940
+so let's do that.
+
+88
+00:03:52,940 --> 00:03:57,550
+Let's say fit-content
+and we're going to say
+
+89
+00:03:57,550 --> 00:04:00,740
+10em, so whatever you pass in,
+
+90
+00:04:00,740 --> 00:04:02,190
+let's do this to all of them,
+
+91
+00:04:12,330 --> 00:04:15,000
+and then we can see what
+happens when we save this.
+
+92
+00:04:17,890 --> 00:04:20,280
+So what fit-content does is it
+
+93
+00:04:20,280 --> 00:04:21,970
+tries to go to max-content,
+
+94
+00:04:21,970 --> 00:04:23,320
+so it tries to make the track
+
+95
+00:04:23,320 --> 00:04:24,160
+as big as it can be,
+
+96
+00:04:24,159 --> 00:04:27,359
+but if it hits the value
+that you've passed in,
+
+97
+00:04:27,360 --> 00:04:30,540
+it doesn't grow any more after that point.
+
+98
+00:04:30,540 --> 00:04:32,800
+So you can see that our first two tracks
+
+99
+00:04:34,000 --> 00:04:36,460
+are just laying out
+their max-content size,
+
+100
+00:04:37,340 --> 00:04:40,880
+and then the track three
+has much more content,
+
+101
+00:04:40,880 --> 00:04:43,570
+and so it gets to that
+value, it gets to 10em
+
+102
+00:04:43,570 --> 00:04:44,810
+and then it starts to wrap,
+
+103
+00:04:44,810 --> 00:04:46,870
+it gets kind of clumped at that value.
+
+104
+00:04:48,460 --> 00:04:50,270
+So fit-content is quite a useful one.
+
+105
+00:04:50,270 --> 00:04:53,110
+You can use that to allow things to be
+
+106
+00:04:53,110 --> 00:04:55,440
+as flexible within limits.
+
+107
+00:04:55,440 --> 00:04:57,670
+You can sort of say yes
+I would like you to grow
+
+108
+00:04:57,670 --> 00:04:59,280
+up to this point and then I'm gonna
+
+109
+00:04:59,280 --> 00:05:00,860
+stop you growing and that stops
+
+110
+00:05:00,860 --> 00:05:02,000
+having the overflows.
+
+111
+00:05:02,000 --> 00:05:05,390
+So that's quite a useful
+track sizing function to use.
+
+112
+00:05:06,300 --> 00:05:07,380
+So that's really what you need to know
+
+113
+00:05:07,380 --> 00:05:09,670
+about track sizing with
+existing length units,
+
+114
+00:05:09,670 --> 00:05:11,500
+things from values and units.
+
+115
+00:05:11,500 --> 00:05:12,820
+In the next lesson though,
+
+116
+00:05:12,820 --> 00:05:14,880
+we'll have a look at a track sizing method
+
+117
+00:05:14,880 --> 00:05:17,510
+which is very specific to grid layout.
+
